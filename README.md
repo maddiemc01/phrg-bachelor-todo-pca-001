@@ -2,7 +2,14 @@
 
 ![bachelor holding a rose](https://s3-us-west-2.amazonaws.com/web-dev-readme-photos/the-bachelor/The-Bachelor.jpg)
 
+## The Plan
+
+This pairing lab does not have a designated place to switch drivers. Instead, every 30 minutes the pair's responsibilities should swap. The driver becomes the navigator, and vice versa.
+
+To minimize extra cloning and forking, this project should be completed in only one person's Github account.
+
 ## Objectives
+
 1. Learn about JSON data
 2. Practice iterating over nested hashes
 
