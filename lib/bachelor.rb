@@ -1,5 +1,3 @@
-require "pry"
-
 def get_first_name_of_season_winner(data, season)
   data[season].each do |key|
     return key['name'].split(' ').first if key['status'] == 'Winner'
@@ -18,7 +16,7 @@ def count_contestants_by_hometown(data, hometown)
   counter = 0
   data.each do |_key, value|
     value.each do |key1|
-      counter += 1 if key1['hometown'] == hometown
+      counter += 1 if key1["hometown"] == hometown
     end
   end
   counter
