@@ -27,9 +27,18 @@ def count_contestants_by_hometown(data, hometown)
 end
 
 def get_occupation(data, hometown)
-  # code here
+  data.each do |_key, value|
+    value.each do |key1|
+      return key1['occupation'] if key1['hometown'] == hometown
+    end
+  end
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+  ages = []
+  data[season].each do |key, _value|
+    ages << key['age'].to_f
+  end
+  average = ages.inject(0) { |sum, x| sum + x } / ages.length
+  average.round
 end
